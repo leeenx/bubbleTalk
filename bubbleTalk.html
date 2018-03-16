@@ -1,8 +1,45 @@
-# bubbleTalk
-
-提取一个业务通用的冒泡转播组件。调用代码如下：
-
-```javascript
+<!DOCTYPE html>
+<html>
+<head>
+	<title>通用冒泡组件</title>
+	<style type="text/css">
+		.bubble {
+			position: relative;  
+			height: 200px; 
+			margin: 30px auto; 
+		}
+		.bubble > li {
+			position: absolute; 
+			bottom: 0; 
+			left: 0; 
+			font-size: 14px; 
+			height: 48px; 
+			line-height: 48px; 
+			background-color: rgba(0, 0, 0, .5); 
+			border-radius: 24px; 
+			text-align: center; 
+			padding: 0 10px;
+			/*visibility: hidden; */
+		}
+	</style>
+</head>
+<body>
+	<ul class="bubble">
+		<li>句子句子句子1</li>
+		<li>句子句子句子2</li>
+		<li>句子句子句子3</li>
+		<li>句子句子句子4</li>
+		<li>句子句子句子5</li>
+		<li>句子句子句子6</li>
+		<li>句子句子句子7</li>
+		<li>句子句子句子8</li>
+		<li>句子句子句子9</li>
+		<li>句子句子句子10</li>
+	</ul>
+</body>
+<script type="text/javascript" src="timer.js"></script>
+<script type="text/javascript" src="bubbleTalk.js"></script>
+<script type="text/javascript">
 bubbleTalk(
 	{
 		selector: ".bubble > li", 
@@ -65,28 +102,5 @@ bubbleTalk(
 		]
 	}
 ); 
-```
-
-## 参数简介
-
-- `selector`: 样式选择器；必选；向 bubbleTalk 传入轮播列表。
-- `duration`: 轮播间隔；[可选]；默认值 2000ms
-- `css`: 轮播节点类名；css 与 style 参考二选一； 
-- `style`: 轮播节点内联样式；css 与 style 参考二选一； 
-
-`style` 与 `css` 二选一，如果同时存在只取 `style`，因为组件内部会把 `style` 转换成 `css`并覆盖原来的 `css` 成员。
-
-泡泡的数量由 style/css 的数组长度解决。
-
->特别注意：
-1 数组第一个成员表示冒泡淡出样式
-2 数组最后一个成员表示待显示样式
-
-具体可以参考线上DEMO
-
-
-
-
-
-
-
+</script>
+</html>
