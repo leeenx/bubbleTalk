@@ -84,6 +84,10 @@ bubbleTalk(
 
 具体可以参考线上 [DEMO](https://leeenx.github.io/bubbleTalk/bubbleTalk.html)
 
+## timer
+
+为了更好的体验，这里使用了 [timer](https://github.com/leeenx/timer#timer_v2)，而不是原生的 `setInterval`。
+
 
 
 
