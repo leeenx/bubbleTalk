@@ -82,7 +82,7 @@ bubbleTalk(
 1 数组第一个成员表示冒泡淡出样式
 2 数组最后一个成员表示待显示样式
 
-具体可以参考线上DEMO
+具体可以参考线上 [DEMO](https://leeenx.github.io/bubbleTalk/bubbleTalk.html)
 
 
 
